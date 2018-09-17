@@ -5,3 +5,5 @@ def count(n = 5):
 
 for i in count(10):
     print(i)
+
+print(i)

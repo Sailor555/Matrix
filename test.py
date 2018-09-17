@@ -7,3 +7,4 @@ b[2][0] = 30
 
 print(a)
 print(b)
+print(a, b)
