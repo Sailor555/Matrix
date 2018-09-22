@@ -1,9 +1,13 @@
-def count(n = 5):
-    while n > 0:
-        yield n
-        n -= 1
+#彩色螺旋
 
-for i in count(10):
-    print(i)
+import turtle as tt
 
-print(i)
+colors = ['red', 'blue', 'green',
+          'purple',  'yellow', 'orange']
+t = tt.Pen()
+tt.bgcolor('black')
+for x in range(360):
+    t.pencolor(colors[x%len(colors)])
+    t.width(x/100 + 1)
+    t.forward(x)
+    t.left(59)
