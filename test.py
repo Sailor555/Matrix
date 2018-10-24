@@ -1,10 +1,2 @@
-a = [1, 2, [3, 4]]
-#b = a
-b = list(a)
-b[0] = 10
-a.append(100)
-b[2][0] = 30
-
-print(a)
-print(b)
-print(a, b)
+print("%0.1f" % sum(int(fields.split(',')[1]) * float(fields.split(',')[2])
+          for fields in open("d:\\testdata\\stocks.csv")))
